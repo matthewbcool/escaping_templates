@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>PROJECT 4</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+    
+    <body>
+    <div class="container-fluid">	
+      <h1>Unit 4: Allow Comments!</h1>
+      <nav class="navbar navbar-default navbar-static-top">
+         <div class="container">
+         	<a class="navbar-brand" href="#">Unit 4 Notes</a>
+         	<ul class="nav navbar-nav">
+         	  <li>
+         		<a href="#">Servers</a>
+         	  </li>
+         	  <li>
+         		<a href="#">Validating Input</a>
+         	  </li>	
+              <li>
+                <a href="#">HTML Templates and Abstraction</a>
+              </li>     
+         	</ul>	
+         </div>
+      </nav>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-xs-4 col-md-2">	
+            <h3 id="1">Servers</h3>
+          </div>
+          <div class="col-md-10">
+          <p>  Servers are computers that provide data to other computers over some sort of network. We get to work with web servers which store website data for other computers to access. The protocol we use to communicate with servers on the web is HTTP Hyper Text Transfer Protocol. When someone wants to access a website, there device (the client) sends an HTTP request (ie: GET) to the server and the server retrives the data and responds. Responses can be static, such as a prewritten file or image or dynamic like our web app generating HTML. <a href="https://www.youtube.com/watch?v=e4S8zfLdLgQ">Here is a video about how servers work in web dev.</a> </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-md-2">	
+            <h3 id="1">Validating Input</h3>
+          </div>
+          <div class="col-md-10">
+          <p>  Validating input is about preventing the user from making mistakes, doing our best to create a secure information transaction and collecting data from user input the way we require it. If we don't validate input, it could have potential security implications for our servers or our websites. Users could break the website or potentially insert malicious code.  </p>
+          </div>
+        </div>	
+        <div class="row">
+          <div class="col-xs-4 col-md-2">	
+            <h3 id="1">HTML Templates and Abstraction</h3>
+          </div>
+          <div class="col-md-10">
+          <p>  HTML templates allow us to dynamically generate pieces of a webpage as we see fit.  Templates help us to avoid repitition in the HTML we write and allow us to build more complex web applications more easily. For example, if your website has a header that you want to use across several webpages, you can use that header in a template rather then reusing the same code over and over across all your pages manually. Templates fall in line with the abstraction principal, as they help us to avoid duplication.
+          </p>
+          </div>
+        </div>		
+      </div>
+
+      {% block content %}
+      {% endblock %}
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </div>  
+    </body>
+</html>    
+
